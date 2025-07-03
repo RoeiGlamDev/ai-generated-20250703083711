@@ -1,0 +1,80 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  transition: background-color 0.3s ease;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 1em;
+  text-align: center;
+}
+
+.calculator {
+  max-width: 300px;
+  margin: 2em auto;
+  padding: 1em;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 0.5em;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#display {
+  width: 100%;
+  height: 2em;
+  padding: 0.5em;
+  font-size: 1.5em;
+  font-weight: bold;
+  border: none;
+  border-radius: 0.5em;
+  background-color: #f0f0f0;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 0.5em;
+  margin-top: 1em;
+}
+
+button {
+  padding: 1em;
+  font-size: 1em;
+  border: none;
+  border-radius: 0.5em;
+  background-color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #f0f0f0;
+}
+
+.number {
+  background-color: #fff;
+}
+
+.operator {
+  background-color: #ccc;
+}
+
+.clear {
+  background-color: #f00;
+  color: #fff;
+}
+
+.fade-in {
+  animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
